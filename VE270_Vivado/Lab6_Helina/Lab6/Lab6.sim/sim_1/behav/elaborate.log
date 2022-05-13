@@ -1,0 +1,9 @@
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 152855207ee9489c84a779657456cad8 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Test_Bench_behav xil_defaultlib.Test_Bench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2063] Module <Key_Scanner> not found while processing module instance <kd> [E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/LAB6.v:21]
+ERROR: [VRFC 10-2063] Module <Reg> not found while processing module instance <R> [E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/LAB6.v:22]
+ERROR: [VRFC 10-2063] Module <SSD> not found while processing module instance <sd> [E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/LAB6.v:23]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.

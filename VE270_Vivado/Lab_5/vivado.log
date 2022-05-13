@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Mon Nov 18 12:46:16 2019
+# Process ID: 19916
+# Current directory: E:/JI Files/VE270_Vivado/Lab_5
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19192 E:\JI Files\VE270_Vivado\Lab_5\Lab_5.xpr
+# Log file: E:/JI Files/VE270_Vivado/Lab_5/vivado.log
+# Journal file: E:/JI Files/VE270_Vivado/Lab_5\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/JI Files/VE270_Vivado/Lab_5/Lab_5.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Vivado/Vivado/2017.2/data/ip'.
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 18 12:48:04 2019...

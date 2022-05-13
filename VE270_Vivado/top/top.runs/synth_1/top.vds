@@ -1,0 +1,374 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Mon Dec  2 14:49:51 2019
+# Process ID: 15380
+# Current directory: E:/JI Files/VE270_Vivado/top/top.runs/synth_1
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: E:/JI Files/VE270_Vivado/top/top.runs/synth_1/top.vds
+# Journal file: E:/JI Files/VE270_Vivado/top/top.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t-cpg236'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t-cpg236'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 14536 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 309.359 ; gain = 79.523
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [E:/JI Files/VE270_Vivado/top/top.srcs/sources_1/new/top.v:3]
+INFO: [Synth 8-638] synthesizing module 'clock_divider500' [E:/JI Files/VE270_Vivado/top/top.srcs/sources_1/new/top.v:157]
+INFO: [Synth 8-256] done synthesizing module 'clock_divider500' (1#1) [E:/JI Files/VE270_Vivado/top/top.srcs/sources_1/new/top.v:157]
+INFO: [Synth 8-638] synthesizing module 'clock_divider1' [E:/JI Files/VE270_Vivado/top/top.srcs/sources_1/new/top.v:183]
+INFO: [Synth 8-256] done synthesizing module 'clock_divider1' (2#1) [E:/JI Files/VE270_Vivado/top/top.srcs/sources_1/new/top.v:183]
+INFO: [Synth 8-638] synthesizing module 'ring_counter' [E:/JI Files/VE270_Vivado/top/top.srcs/sources_1/new/top.v:105]
+INFO: [Synth 8-256] done synthesizing module 'ring_counter' (3#1) [E:/JI Files/VE270_Vivado/top/top.srcs/sources_1/new/top.v:105]
+INFO: [Synth 8-638] synthesizing module 'ssd' [E:/JI Files/VE270_Vivado/top/top.srcs/sources_1/new/top.v:118]
+INFO: [Synth 8-226] default block is never used [E:/JI Files/VE270_Vivado/top/top.srcs/sources_1/new/top.v:125]
+WARNING: [Synth 8-567] referenced signal 'ssd_neg' should be on the sensitivity list [E:/JI Files/VE270_Vivado/top/top.srcs/sources_1/new/top.v:123]
+INFO: [Synth 8-256] done synthesizing module 'ssd' (4#1) [E:/JI Files/VE270_Vivado/top/top.srcs/sources_1/new/top.v:118]
+INFO: [Synth 8-226] default block is never used [E:/JI Files/VE270_Vivado/top/top.srcs/sources_1/new/top.v:32]
+INFO: [Synth 8-226] default block is never used [E:/JI Files/VE270_Vivado/top/top.srcs/sources_1/new/top.v:40]
+WARNING: [Synth 8-567] referenced signal 'type' should be on the sensitivity list [E:/JI Files/VE270_Vivado/top/top.srcs/sources_1/new/top.v:30]
+WARNING: [Synth 8-567] referenced signal 'Q1' should be on the sensitivity list [E:/JI Files/VE270_Vivado/top/top.srcs/sources_1/new/top.v:30]
+WARNING: [Synth 8-567] referenced signal 'c1' should be on the sensitivity list [E:/JI Files/VE270_Vivado/top/top.srcs/sources_1/new/top.v:30]
+WARNING: [Synth 8-567] referenced signal 'Q2' should be on the sensitivity list [E:/JI Files/VE270_Vivado/top/top.srcs/sources_1/new/top.v:30]
+WARNING: [Synth 8-567] referenced signal 'c2' should be on the sensitivity list [E:/JI Files/VE270_Vivado/top/top.srcs/sources_1/new/top.v:30]
+WARNING: [Synth 8-567] referenced signal 'Q3' should be on the sensitivity list [E:/JI Files/VE270_Vivado/top/top.srcs/sources_1/new/top.v:30]
+WARNING: [Synth 8-567] referenced signal 'c3' should be on the sensitivity list [E:/JI Files/VE270_Vivado/top/top.srcs/sources_1/new/top.v:30]
+WARNING: [Synth 8-567] referenced signal 'Q4' should be on the sensitivity list [E:/JI Files/VE270_Vivado/top/top.srcs/sources_1/new/top.v:30]
+WARNING: [Synth 8-567] referenced signal 'c4' should be on the sensitivity list [E:/JI Files/VE270_Vivado/top/top.srcs/sources_1/new/top.v:30]
+WARNING: [Synth 8-567] referenced signal 'c5' should be on the sensitivity list [E:/JI Files/VE270_Vivado/top/top.srcs/sources_1/new/top.v:30]
+WARNING: [Synth 8-567] referenced signal 'Q5' should be on the sensitivity list [E:/JI Files/VE270_Vivado/top/top.srcs/sources_1/new/top.v:30]
+WARNING: [Synth 8-567] referenced signal 'c6' should be on the sensitivity list [E:/JI Files/VE270_Vivado/top/top.srcs/sources_1/new/top.v:30]
+WARNING: [Synth 8-6014] Unused sequential element new_reg was removed.  [E:/JI Files/VE270_Vivado/top/top.srcs/sources_1/new/top.v:79]
+INFO: [Synth 8-256] done synthesizing module 'top' (5#1) [E:/JI Files/VE270_Vivado/top/top.srcs/sources_1/new/top.v:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 348.434 ; gain = 118.598
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 348.434 ; gain = 118.598
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/JI Files/VE270_Vivado/top/top.srcs/constrs_1/new/constraint.xdc]
+WARNING: [Vivado 12-507] No nets matched 'equal_IBUF'. [E:/JI Files/VE270_Vivado/top/top.srcs/constrs_1/new/constraint.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/JI Files/VE270_Vivado/top/top.srcs/constrs_1/new/constraint.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [E:/JI Files/VE270_Vivado/top/top.srcs/constrs_1/new/constraint.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/JI Files/VE270_Vivado/top/top.srcs/constrs_1/new/constraint.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 643.379 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 643.379 ; gain = 413.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 643.379 ; gain = 413.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 643.379 ; gain = 413.543
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "clk_500" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_1" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element SJTU_reg was removed.  [E:/JI Files/VE270_Vivado/top/top.srcs/sources_1/new/top.v:53]
+WARNING: [Synth 8-6014] Unused sequential element M_reg was removed.  [E:/JI Files/VE270_Vivado/top/top.srcs/sources_1/new/top.v:79]
+WARNING: [Synth 8-327] inferring latch for variable 'Q_reg' [E:/JI Files/VE270_Vivado/top/top.srcs/sources_1/new/top.v:27]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 643.379 ; gain = 413.543
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     18 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 3     
+	   3 Input      4 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               18 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                4 Bit    Registers := 7     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     18 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	  18 Input      7 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	  16 Input      1 Bit        Muxes := 9     
+	   5 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 3     
+	   3 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	                4 Bit    Registers := 7     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	  16 Input      1 Bit        Muxes := 9     
+	   5 Input      1 Bit        Muxes := 1     
+Module clock_divider500 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     18 Bit       Adders := 1     
++---Registers : 
+	               18 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     18 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module clock_divider1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	                9 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module ring_counter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+Module ssd 
+Detailed RTL Component Info : 
++---Muxes : 
+	  18 Input      7 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "divider1/clk_500" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "divider2/clk_1" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element SJTU_reg was removed.  [E:/JI Files/VE270_Vivado/top/top.srcs/sources_1/new/top.v:53]
+WARNING: [Synth 8-6014] Unused sequential element M_reg was removed.  [E:/JI Files/VE270_Vivado/top/top.srcs/sources_1/new/top.v:79]
+INFO: [Synth 8-3886] merging instance 'c6_reg[1]' (FDRE) to 'c6_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\c6_reg[0] )
+WARNING: [Synth 8-3332] Sequential element (c6_reg[0]) is unused and will be removed from module top.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 643.379 ; gain = 413.543
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 643.379 ; gain = 413.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 643.379 ; gain = 413.543
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'M_reg[0]' (FDE) to 'Q5_reg[0]'
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 643.379 ; gain = 413.543
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 643.379 ; gain = 413.543
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 643.379 ; gain = 413.543
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 643.379 ; gain = 413.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 643.379 ; gain = 413.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 643.379 ; gain = 413.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 643.379 ; gain = 413.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |     5|
+|3     |LUT1   |    22|
+|4     |LUT2   |    13|
+|5     |LUT3   |    13|
+|6     |LUT4   |    32|
+|7     |LUT5   |    12|
+|8     |LUT6   |    22|
+|9     |FDRE   |    66|
+|10    |LD     |     4|
+|11    |IBUF   |     6|
+|12    |OBUF   |    12|
++------+-------+------+
+
+Report Instance Areas: 
++------+-----------+-----------------+------+
+|      |Instance   |Module           |Cells |
++------+-----------+-----------------+------+
+|1     |top        |                 |   209|
+|2     |  divider1 |clock_divider500 |    47|
+|3     |  divider2 |clock_divider1   |    23|
+|4     |  rc       |ring_counter     |    27|
++------+-----------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 643.379 ; gain = 413.543
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 643.379 ; gain = 118.598
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 643.379 ; gain = 413.543
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 15 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  LD => LDCE: 4 instances
+
+31 Infos, 21 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 643.379 ; gain = 421.309
+INFO: [Common 17-1381] The checkpoint 'E:/JI Files/VE270_Vivado/top/top.runs/synth_1/top.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 643.379 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Dec  2 14:50:22 2019...

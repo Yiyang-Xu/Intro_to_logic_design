@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/JI Files/VE270_Vivado/HW5/HW5_2.srcs/sources_1/new/D_ff.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module D_ff
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/JI Files/VE270_Vivado/HW5/HW5_2.srcs/sources_1/new/HW5_2_Top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HW5_2_Top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/JI Files/VE270_Vivado/HW5/HW5_2.srcs/sim_1/new/Test_Banch.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Test_Banch
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/JI Files/VE270_Vivado/HW5/HW5_2.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

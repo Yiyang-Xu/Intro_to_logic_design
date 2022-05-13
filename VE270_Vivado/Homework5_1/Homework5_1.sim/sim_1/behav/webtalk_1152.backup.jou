@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Mon Oct 28 19:32:59 2019
+# Process ID: 1152
+# Current directory: E:/JI Files/VE270_Vivado/Homework5_1/Homework5_1.sim/sim_1/behav
+# Command line: wbtcv.exe -mode batch -source E:/JI Files/VE270_Vivado/Homework5_1/Homework5_1.sim/sim_1/behav/xsim.dir/Test_Banch_1_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: E:/JI Files/VE270_Vivado/Homework5_1/Homework5_1.sim/sim_1/behav/webtalk.log
+# Journal file: E:/JI Files/VE270_Vivado/Homework5_1/Homework5_1.sim/sim_1/behav\webtalk.jou
+#-----------------------------------------------------------
+source E:/JI -notrace

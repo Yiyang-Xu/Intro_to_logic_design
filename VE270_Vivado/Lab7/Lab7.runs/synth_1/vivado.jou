@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Mon Dec  2 13:41:44 2019
+# Process ID: 8096
+# Current directory: E:/JI Files/VE270_Vivado/Lab7/Lab7.runs/synth_1
+# Command line: vivado.exe -log LAB7.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source LAB7.tcl
+# Log file: E:/JI Files/VE270_Vivado/Lab7/Lab7.runs/synth_1/LAB7.vds
+# Journal file: E:/JI Files/VE270_Vivado/Lab7/Lab7.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source LAB7.tcl -notrace

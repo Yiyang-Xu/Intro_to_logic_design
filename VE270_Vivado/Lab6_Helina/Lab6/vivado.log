@@ -1,0 +1,1166 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Mon Nov 18 11:05:58 2019
+# Process ID: 5300
+# Current directory: E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13412 E:\JI Files\VE270_Vivado\Lab6_Helina\Lab6\Lab6.xpr
+# Log file: E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/vivado.log
+# Journal file: E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/Helina Fikru Yilma/Documents/JI/Sophomore/VE270/LAB/Lab6' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Vivado/Vivado/2017.2/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Test_Bench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.sim/sim_1/behav'
+"xvlog -m64 --relax -prj Test_Bench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/Key_Scanner.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Key_Scanner
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/LAB6.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LAB6
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/Register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/SSD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SSD
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sim_1/new/Test_bench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Test_Bench
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 152855207ee9489c84a779657456cad8 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Test_Bench_behav xil_defaultlib.Test_Bench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Key_Scanner
+Compiling module xil_defaultlib.Reg
+Compiling module xil_defaultlib.SSD
+Compiling module xil_defaultlib.LAB6
+Compiling module xil_defaultlib.Test_Bench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Test_Bench_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source E:/JI -notrace
+couldn't read file "E:/JI": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Mon Nov 18 11:14:32 2019...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 839.219 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '11' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Test_Bench_behav -key {Behavioral:sim_1:Functional:Test_Bench} -tclbatch {Test_Bench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+source Test_Bench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Test_Bench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:21 . Memory (MB): peak = 839.219 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Test_Bench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.sim/sim_1/behav'
+"xvlog -m64 --relax -prj Test_Bench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/Key_Scanner.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Key_Scanner
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/LAB6.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LAB6
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/Register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/SSD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SSD
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sim_1/new/Test_bench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Test_Bench
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 152855207ee9489c84a779657456cad8 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Test_Bench_behav xil_defaultlib.Test_Bench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Key_Scanner
+Compiling module xil_defaultlib.Reg
+Compiling module xil_defaultlib.SSD
+Compiling module xil_defaultlib.LAB6
+Compiling module xil_defaultlib.Test_Bench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Test_Bench_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source E:/JI -notrace
+couldn't read file "E:/JI": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Mon Nov 18 11:21:03 2019...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Test_Bench_behav -key {Behavioral:sim_1:Functional:Test_Bench} -tclbatch {Test_Bench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+source Test_Bench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Test_Bench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 872.688 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Test_Bench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.sim/sim_1/behav'
+"xvlog -m64 --relax -prj Test_Bench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/Key_Scanner.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Key_Scanner
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/LAB6.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LAB6
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/Register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/SSD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SSD
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sim_1/new/Test_bench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Test_Bench
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 152855207ee9489c84a779657456cad8 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Test_Bench_behav xil_defaultlib.Test_Bench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Key_Scanner
+Compiling module xil_defaultlib.Reg
+Compiling module xil_defaultlib.SSD
+Compiling module xil_defaultlib.LAB6
+Compiling module xil_defaultlib.Test_Bench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Test_Bench_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source E:/JI -notrace
+couldn't read file "E:/JI": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Mon Nov 18 11:22:10 2019...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Test_Bench_behav -key {Behavioral:sim_1:Functional:Test_Bench} -tclbatch {Test_Bench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+source Test_Bench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Test_Bench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 872.688 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Test_Bench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.sim/sim_1/behav'
+"xvlog -m64 --relax -prj Test_Bench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/Key_Scanner.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Key_Scanner
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/LAB6.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LAB6
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/Register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/SSD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SSD
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sim_1/new/Test_bench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Test_Bench
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 152855207ee9489c84a779657456cad8 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Test_Bench_behav xil_defaultlib.Test_Bench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Key_Scanner
+Compiling module xil_defaultlib.Reg
+Compiling module xil_defaultlib.SSD
+Compiling module xil_defaultlib.LAB6
+Compiling module xil_defaultlib.Test_Bench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Test_Bench_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source E:/JI -notrace
+couldn't read file "E:/JI": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Mon Nov 18 11:23:02 2019...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Test_Bench_behav -key {Behavioral:sim_1:Functional:Test_Bench} -tclbatch {Test_Bench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+source Test_Bench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Test_Bench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 872.688 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Test_Bench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.sim/sim_1/behav'
+"xvlog -m64 --relax -prj Test_Bench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/Key_Scanner.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Key_Scanner
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/LAB6.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LAB6
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/Register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/SSD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SSD
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sim_1/new/Test_bench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Test_Bench
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 152855207ee9489c84a779657456cad8 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Test_Bench_behav xil_defaultlib.Test_Bench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Key_Scanner
+Compiling module xil_defaultlib.Reg
+Compiling module xil_defaultlib.SSD
+Compiling module xil_defaultlib.LAB6
+Compiling module xil_defaultlib.Test_Bench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Test_Bench_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source E:/JI -notrace
+couldn't read file "E:/JI": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Mon Nov 18 11:26:30 2019...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Test_Bench_behav -key {Behavioral:sim_1:Functional:Test_Bench} -tclbatch {Test_Bench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+source Test_Bench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Test_Bench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 872.688 ; gain = 0.000
+launch_runs synth_1 -jobs 4
+[Mon Nov 18 11:29:07 2019] Launched synth_1...
+Run output will be captured here: E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.runs/synth_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.sim/sim_1/behav/Test_Bench_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.sim/sim_1/behav/xelab.pb
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Test_Bench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.sim/sim_1/behav'
+"xvlog -m64 --relax -prj Test_Bench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/Key_Scanner.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Key_Scanner
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/LAB6.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LAB6
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/Register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/SSD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SSD
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sim_1/new/Test_bench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Test_Bench
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 152855207ee9489c84a779657456cad8 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Test_Bench_behav xil_defaultlib.Test_Bench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Key_Scanner
+Compiling module xil_defaultlib.Reg
+Compiling module xil_defaultlib.SSD
+Compiling module xil_defaultlib.LAB6
+Compiling module xil_defaultlib.Test_Bench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Test_Bench_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source E:/JI -notrace
+couldn't read file "E:/JI": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Mon Nov 18 11:29:25 2019...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Test_Bench_behav -key {Behavioral:sim_1:Functional:Test_Bench} -tclbatch {Test_Bench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+source Test_Bench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Test_Bench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 880.223 ; gain = 0.000
+reset_run synth_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Test_Bench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.sim/sim_1/behav'
+"xvlog -m64 --relax -prj Test_Bench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/Key_Scanner.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Key_Scanner
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/LAB6.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LAB6
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/Register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/SSD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SSD
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sim_1/new/Test_bench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Test_Bench
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 152855207ee9489c84a779657456cad8 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Test_Bench_behav xil_defaultlib.Test_Bench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Key_Scanner
+Compiling module xil_defaultlib.Reg
+Compiling module xil_defaultlib.SSD
+Compiling module xil_defaultlib.LAB6
+Compiling module xil_defaultlib.Test_Bench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Test_Bench_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source E:/JI -notrace
+couldn't read file "E:/JI": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Mon Nov 18 11:30:30 2019...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Test_Bench_behav -key {Behavioral:sim_1:Functional:Test_Bench} -tclbatch {Test_Bench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+source Test_Bench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Test_Bench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 884.844 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Test_Bench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.sim/sim_1/behav'
+"xvlog -m64 --relax -prj Test_Bench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/Key_Scanner.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Key_Scanner
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/LAB6.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LAB6
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/Register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/SSD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SSD
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sim_1/new/Test_bench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Test_Bench
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 152855207ee9489c84a779657456cad8 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Test_Bench_behav xil_defaultlib.Test_Bench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Key_Scanner
+Compiling module xil_defaultlib.Reg
+Compiling module xil_defaultlib.SSD
+Compiling module xil_defaultlib.LAB6
+Compiling module xil_defaultlib.Test_Bench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Test_Bench_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source E:/JI -notrace
+couldn't read file "E:/JI": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Mon Nov 18 11:31:17 2019...
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Test_Bench_behav -key {Behavioral:sim_1:Functional:Test_Bench} -tclbatch {Test_Bench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+source Test_Bench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Test_Bench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 884.844 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Test_Bench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.sim/sim_1/behav'
+"xvlog -m64 --relax -prj Test_Bench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/Key_Scanner.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Key_Scanner
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/LAB6.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LAB6
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/Register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/SSD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SSD
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sim_1/new/Test_bench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Test_Bench
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 152855207ee9489c84a779657456cad8 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Test_Bench_behav xil_defaultlib.Test_Bench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Key_Scanner
+Compiling module xil_defaultlib.Reg
+Compiling module xil_defaultlib.SSD
+Compiling module xil_defaultlib.LAB6
+Compiling module xil_defaultlib.Test_Bench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Test_Bench_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source E:/JI -notrace
+couldn't read file "E:/JI": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Mon Nov 18 11:33:35 2019...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Test_Bench_behav -key {Behavioral:sim_1:Functional:Test_Bench} -tclbatch {Test_Bench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+source Test_Bench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Test_Bench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 884.844 ; gain = 0.000
+launch_runs synth_1 -jobs 4
+[Mon Nov 18 11:59:50 2019] Launched synth_1...
+Run output will be captured here: E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Mon Nov 18 12:00:42 2019] Launched impl_1...
+Run output will be captured here: E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.2
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.112 . Memory (MB): peak = 1080.008 ; gain = 2.004
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.113 . Memory (MB): peak = 1080.008 ; gain = 2.004
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:15 ; elapsed = 00:00:09 . Memory (MB): peak = 1194.047 ; gain = 305.969
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Mon Nov 18 12:04:43 2019] Launched synth_1...
+Run output will be captured here: E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Mon Nov 18 12:05:07 2019] Launched impl_1...
+Run output will be captured here: E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 1625.387 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 1625.387 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+place_ports {col[3]} G3
+place_ports {col[2]} H1
+place_ports {col[1]} K2
+place_ports {col[0]} H2
+place_ports {row[3]} G2
+place_ports {row[2]} J2
+place_ports {row[1]} L2
+place_ports {row[0]} J1
+place_ports {Light[6]} W7
+place_ports {Light[5]} W6
+place_ports {Light[4]} U8
+place_ports {Light[3]} V8
+place_ports {Light[2]} U5
+place_ports {Light[1]} V5
+place_ports {Light[0]} U7
+place_ports clock W5
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Mon Nov 18 12:30:58 2019] Launched synth_1...
+Run output will be captured here: E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Mon Nov 18 12:31:25 2019] Launched impl_1...
+Run output will be captured here: E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 1665.395 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 1665.395 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+place_ports {col[3]} G3
+place_ports {col[2]} H1
+place_ports {col[1]} K3
+place_ports {col[1]} K2
+place_ports {col[0]} H2
+place_ports {Light[6]} W7
+place_ports {Light[5]} W6
+place_ports {Light[4]} U8
+place_ports {Light[3]} V8
+place_ports {Light[2]} U5
+place_ports {Light[1]} V5
+place_ports {Light[0]} U7
+place_ports {row[3]} G2
+place_ports {row[2]} J2
+place_ports {row[1]} L2
+place_ports {row[0]} J1
+place_ports clock W5
+place_ports reset U17
+set_property IOSTANDARD LVCMOS33 [get_ports [list {col[3]} {col[2]} {col[1]} {col[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {Light[6]} {Light[5]} {Light[4]} {Light[3]} {Light[2]} {Light[1]} {Light[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {row[3]} {row[2]} {row[1]} {row[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list clock]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list reset]]
+file mkdir {E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/constrs_1/new}
+close [ open {E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/constrs_1/new/Constraint.xdc} w ]
+add_files -fileset constrs_1 {{E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/constrs_1/new/Constraint.xdc}}
+set_property target_constrs_file {E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/constrs_1/new/Constraint.xdc} [current_fileset -constrset]
+save_constraints -force
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Mon Nov 18 12:37:10 2019] Launched synth_1...
+Run output will be captured here: E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Mon Nov 18 12:37:55 2019] Launched impl_1...
+Run output will be captured here: E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Nov 18 12:38:53 2019] Launched impl_1...
+Run output will be captured here: E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2017.2
+  **** Build date : Jun 15 2017-18:53:26
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1665.395 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A3863DA
+set_property PROGRAM.FILE {E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.runs/impl_1/LAB6.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.runs/impl_1/LAB6.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Mon Nov 18 12:54:04 2019] Launched synth_1...
+Run output will be captured here: E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Mon Nov 18 12:54:43 2019] Launched impl_1...
+Run output will be captured here: E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.runs/impl_1/runme.log
+refresh_design
+INFO: [Project 1-479] Netlist was created with Vivado 2017.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/.Xil/Vivado-5300-LAPTOP-49J758SJ/dcp27/LAB6.xdc]
+Finished Parsing XDC File [E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/.Xil/Vivado-5300-LAPTOP-49J758SJ/dcp27/LAB6.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 1816.324 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 1816.324 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 1816.324 ; gain = 0.000
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Mon Nov 18 12:56:02 2019] Launched synth_1...
+Run output will be captured here: E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Mon Nov 18 12:56:49 2019] Launched impl_1...
+Run output will be captured here: E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Nov 18 12:57:55 2019] Launched impl_1...
+Run output will be captured here: E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Nov 18 12:58:54 2019] Launched impl_1...
+Run output will be captured here: E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.runs/impl_1/runme.log
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A3863DA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A3863DA
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.runs/impl_1/LAB6.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Test_Bench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.sim/sim_1/behav'
+"xvlog -m64 --relax -prj Test_Bench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/Key_Scanner.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Key_Scanner
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/LAB6.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clock_divider_10000
+INFO: [VRFC 10-311] analyzing module LAB6
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/Register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/SSD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SSD
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sim_1/new/Test_bench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Test_Bench
+ERROR: [VRFC 10-91] OR_ROW is not declared [E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sim_1/new/Test_bench.v:12]
+ERROR: [VRFC 10-91] OR_ROW is not declared [E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sim_1/new/Test_bench.v:14]
+ERROR: [VRFC 10-91] OR_ROW is not declared [E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sim_1/new/Test_bench.v:16]
+ERROR: [VRFC 10-1040] module Test_Bench ignored due to previous errors [E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sim_1/new/Test_bench.v:3]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.sim/sim_1/behav/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.sim/sim_1/behav/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Test_Bench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.sim/sim_1/behav'
+"xvlog -m64 --relax -prj Test_Bench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/Key_Scanner.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Key_Scanner
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/LAB6.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clock_divider_10000
+INFO: [VRFC 10-311] analyzing module LAB6
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/Register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/SSD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SSD
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sim_1/new/Test_bench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Test_Bench
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 152855207ee9489c84a779657456cad8 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Test_Bench_behav xil_defaultlib.Test_Bench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 4 differs from formal bit length 7 for port Light [E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sim_1/new/Test_bench.v:10]
+ERROR: [VRFC 10-29] LAB6 expects 5 arguments [E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sim_1/new/Test_bench.v:10]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.sim/sim_1/behav/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.sim/sim_1/behav/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Test_Bench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.sim/sim_1/behav'
+"xvlog -m64 --relax -prj Test_Bench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/Key_Scanner.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Key_Scanner
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/LAB6.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clock_divider_10000
+INFO: [VRFC 10-311] analyzing module LAB6
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/Register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/SSD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SSD
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sim_1/new/Test_bench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Test_Bench
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 152855207ee9489c84a779657456cad8 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Test_Bench_behav xil_defaultlib.Test_Bench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Key_Scanner
+Compiling module xil_defaultlib.Reg
+Compiling module xil_defaultlib.SSD
+Compiling module xil_defaultlib.LAB6
+Compiling module xil_defaultlib.Test_Bench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Test_Bench_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source E:/JI -notrace
+couldn't read file "E:/JI": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Mon Nov 18 13:06:47 2019...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Test_Bench_behav -key {Behavioral:sim_1:Functional:Test_Bench} -tclbatch {Test_Bench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+source Test_Bench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Test_Bench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 1854.766 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Test_Bench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.sim/sim_1/behav'
+"xvlog -m64 --relax -prj Test_Bench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/LAB6.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clock_divider_10000
+INFO: [VRFC 10-311] analyzing module LAB6
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/Register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/SSD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SSD
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sim_1/new/Test_bench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Test_Bench
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 152855207ee9489c84a779657456cad8 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Test_Bench_behav xil_defaultlib.Test_Bench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2063] Module <Key_Scanner> not found while processing module instance <kd> [E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/LAB6.v:21]
+ERROR: [VRFC 10-2063] Module <Reg> not found while processing module instance <R> [E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/LAB6.v:22]
+ERROR: [VRFC 10-2063] Module <SSD> not found while processing module instance <sd> [E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/LAB6.v:23]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.sim/sim_1/behav/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.sim/sim_1/behav/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1854.766 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close_project
+create_project project_jyy {E:/JI Files/VE270_Vivado/Lab6_Helina/project_jyy} -part xc7a35tcpg236-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Vivado/Vivado/2017.2/data/ip'.
+file mkdir E:/JI Files/VE270_Vivado/Lab6_Helina/project_jyy/project_jyy.srcs/sources_1/new
+file mkdir E:/JI Files/VE270_Vivado/Lab6_Helina/project_jyy/project_jyy.srcs/sources_1/new
+file mkdir E:/JI Files/VE270_Vivado/Lab6_Helina/project_jyy/project_jyy.srcs/sources_1/new
+file mkdir E:/JI Files/VE270_Vivado/Lab6_Helina/project_jyy/project_jyy.srcs/sources_1/new
+file mkdir E:/JI Files/VE270_Vivado/Lab6_Helina/project_jyy/project_jyy.srcs/sources_1/new
+file mkdir E:/JI Files/VE270_Vivado/Lab6_Helina/project_jyy/project_jyy.srcs/sources_1/new
+file mkdir {E:/JI Files/VE270_Vivado/Lab6_Helina/project_jyy/project_jyy.srcs/sources_1/new}
+close [ open {E:/JI Files/VE270_Vivado/Lab6_Helina/project_jyy/project_jyy.srcs/sources_1/new/Whole.v} w ]
+add_files {{E:/JI Files/VE270_Vivado/Lab6_Helina/project_jyy/project_jyy.srcs/sources_1/new/Whole.v}}
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 4
+[Mon Nov 18 13:44:38 2019] Launched synth_1...
+Run output will be captured here: E:/JI Files/VE270_Vivado/Lab6_Helina/project_jyy/project_jyy.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Mon Nov 18 13:46:01 2019] Launched impl_1...
+Run output will be captured here: E:/JI Files/VE270_Vivado/Lab6_Helina/project_jyy/project_jyy.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 10 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 1964.551 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 1964.551 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+place_ports {cathode[6]} W7
+place_ports {cathode[5]} W6
+place_ports {cathode[4]} U8
+place_ports {cathode[3]} V8
+place_ports {cathode[2]} U5
+place_ports {cathode[1]} V5
+place_ports {cathode[0]} U7
+set_property IOSTANDARD LVCMOS33 [get_ports [list {anode[3]} {anode[2]} {anode[1]} {anode[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {cathode[6]} {cathode[5]} {cathode[4]} {cathode[3]} {cathode[2]} {cathode[1]} {cathode[0]}]]
+place_ports {col[3]} G3
+place_ports {col[2]} H1
+place_ports {col[1]} K2
+place_ports {col[0]} H2
+set_property IOSTANDARD LVCMOS33 [get_ports [list {col[3]} {col[2]} {col[1]} {col[0]}]]
+place_ports {row[3]} G2
+place_ports {row[2]} J2
+place_ports {row[1]} L2
+place_ports {row[0]} J1
+set_property IOSTANDARD LVCMOS33 [get_ports [list {row[3]} {row[2]} {row[1]} {row[0]}]]
+place_ports clock_in W5
+place_ports reset U17
+set_property IOSTANDARD LVCMOS33 [get_ports [list clock_in]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list reset]]
+place_ports {anode[3]} W4
+place_ports {anode[2]} V4
+place_ports {anode[1]} U4
+place_ports {anode[0]} U2
+file mkdir {E:/JI Files/VE270_Vivado/Lab6_Helina/project_jyy/project_jyy.srcs/constrs_1/new}
+close [ open {E:/JI Files/VE270_Vivado/Lab6_Helina/project_jyy/project_jyy.srcs/constrs_1/new/Constraint.xdc} w ]
+add_files -fileset constrs_1 {{E:/JI Files/VE270_Vivado/Lab6_Helina/project_jyy/project_jyy.srcs/constrs_1/new/Constraint.xdc}}
+set_property target_constrs_file {E:/JI Files/VE270_Vivado/Lab6_Helina/project_jyy/project_jyy.srcs/constrs_1/new/Constraint.xdc} [current_fileset -constrset]
+save_constraints -force
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Mon Nov 18 13:51:16 2019] Launched synth_1...
+Run output will be captured here: E:/JI Files/VE270_Vivado/Lab6_Helina/project_jyy/project_jyy.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Mon Nov 18 13:51:58 2019] Launched impl_1...
+Run output will be captured here: E:/JI Files/VE270_Vivado/Lab6_Helina/project_jyy/project_jyy.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Nov 18 13:52:54 2019] Launched impl_1...
+Run output will be captured here: E:/JI Files/VE270_Vivado/Lab6_Helina/project_jyy/project_jyy.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2017.2
+  **** Build date : Jun 15 2017-18:53:26
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1994.047 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A3863DA
+set_property PROGRAM.FILE {E:/JI Files/VE270_Vivado/Lab6_Helina/project_jyy/project_jyy.runs/impl_1/Whole.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/JI Files/VE270_Vivado/Lab6_Helina/project_jyy/project_jyy.runs/impl_1/Whole.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 18 14:01:08 2019...

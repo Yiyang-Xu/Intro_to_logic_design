@@ -1,0 +1,53 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Mon Oct 28 19:11:00 2019
+# Process ID: 6876
+# Current directory: E:/JI Files/VE270_Vivado/Homework5_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5764 E:\JI Files\VE270_Vivado\Homework5_1\Homework5_1.xpr
+# Log file: E:/JI Files/VE270_Vivado/Homework5_1/vivado.log
+# Journal file: E:/JI Files/VE270_Vivado/Homework5_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/JI Files/VE270_Vivado/Homework5_1/Homework5_1.xpr}
+update_compile_order -fileset sources_1
+file mkdir E:/JI Files/VE270_Vivado/Homework5_1/Homework5_1.srcs/sim_1/new
+file mkdir E:/JI Files/VE270_Vivado/Homework5_1/Homework5_1.srcs/sim_1/new
+file mkdir E:/JI Files/VE270_Vivado/Homework5_1/Homework5_1.srcs/sim_1/new
+file mkdir E:/JI Files/VE270_Vivado/Homework5_1/Homework5_1.srcs/sim_1/new
+file mkdir E:/JI Files/VE270_Vivado/Homework5_1/Homework5_1.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+file mkdir E:/JI Files/VE270_Vivado/Homework5_1/Homework5_1.srcs/sim_1/new
+file mkdir {E:/JI Files/VE270_Vivado/Homework5_1/Homework5_1.srcs/sim_1/new}
+close [ open {E:/JI Files/VE270_Vivado/Homework5_1/Homework5_1.srcs/sim_1/new/Test_Banch_1.v} w ]
+add_files -fileset sim_1 {{E:/JI Files/VE270_Vivado/Homework5_1/Homework5_1.srcs/sim_1/new/Test_Banch_1.v}}
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Test_Banch_1 [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+remove_files  -fileset sim_1 {{E:/JI Files/VE270_Vivado/Homework5_1/Homework5_1.srcs/sim_1/new/Test_Banch_1.v}}
+file delete -force {E:/JI Files/VE270_Vivado/Homework5_1/Homework5_1.srcs/sim_1/new/Test_Banch_1.v}
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open {E:/JI Files/VE270_Vivado/Homework5_1/Homework5_1.srcs/sim_1/new/TB_1.v} w ]
+add_files -fileset sim_1 {{E:/JI Files/VE270_Vivado/Homework5_1/Homework5_1.srcs/sim_1/new/TB_1.v}}
+set_property top TB_1 [get_filesets sim_1]
+remove_files  -fileset sim_1 {{E:/JI Files/VE270_Vivado/Homework5_1/Homework5_1.srcs/sim_1/new/TB_1.v}}
+file delete -force {E:/JI Files/VE270_Vivado/Homework5_1/Homework5_1.srcs/sim_1/new/TB_1.v}
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open {E:/JI Files/VE270_Vivado/Homework5_1/Homework5_1.srcs/sim_1/new/TB_1.v} w ]
+add_files -fileset sim_1 {{E:/JI Files/VE270_Vivado/Homework5_1/Homework5_1.srcs/sim_1/new/TB_1.v}}
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation
+source Test_Banch_1.tcl
+close_sim
+launch_simulation
+source Test_Banch_1.tcl
+close_sim

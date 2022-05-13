@@ -1,0 +1,221 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Mon Nov 18 11:05:58 2019
+# Process ID: 5300
+# Current directory: E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13412 E:\JI Files\VE270_Vivado\Lab6_Helina\Lab6\Lab6.xpr
+# Log file: E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/vivado.log
+# Journal file: E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+source Test_Bench.tcl
+close_sim
+launch_simulation
+source Test_Bench.tcl
+close_sim
+launch_simulation
+source Test_Bench.tcl
+close_sim
+launch_simulation
+source Test_Bench.tcl
+close_sim
+launch_simulation
+source Test_Bench.tcl
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_sim
+launch_simulation
+source Test_Bench.tcl
+reset_run synth_1
+close_sim
+launch_simulation
+source Test_Bench.tcl
+close_sim
+launch_simulation
+source Test_Bench.tcl
+close_sim
+launch_simulation
+source Test_Bench.tcl
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+open_run impl_1
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+open_run impl_1
+place_ports {col[3]} G3
+place_ports {col[2]} H1
+place_ports {col[1]} K2
+place_ports {col[0]} H2
+place_ports {row[3]} G2
+place_ports {row[2]} J2
+place_ports {row[1]} L2
+place_ports {row[0]} J1
+place_ports {Light[6]} W7
+place_ports {Light[5]} W6
+place_ports {Light[4]} U8
+place_ports {Light[3]} V8
+place_ports {Light[2]} U5
+place_ports {Light[1]} V5
+place_ports {Light[0]} U7
+place_ports clock W5
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+open_run impl_1
+place_ports {col[3]} G3
+place_ports {col[2]} H1
+place_ports {col[1]} K3
+place_ports {col[1]} K2
+place_ports {col[0]} H2
+place_ports {Light[6]} W7
+place_ports {Light[5]} W6
+place_ports {Light[4]} U8
+place_ports {Light[3]} V8
+place_ports {Light[2]} U5
+place_ports {Light[1]} V5
+place_ports {Light[0]} U7
+place_ports {row[3]} G2
+place_ports {row[2]} J2
+place_ports {row[1]} L2
+place_ports {row[0]} J1
+place_ports clock W5
+place_ports reset U17
+set_property IOSTANDARD LVCMOS33 [get_ports [list {col[3]} {col[2]} {col[1]} {col[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {Light[6]} {Light[5]} {Light[4]} {Light[3]} {Light[2]} {Light[1]} {Light[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {row[3]} {row[2]} {row[1]} {row[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list clock]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list reset]]
+file mkdir {E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/constrs_1/new}
+close [ open {E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/constrs_1/new/Constraint.xdc} w ]
+add_files -fileset constrs_1 {{E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/constrs_1/new/Constraint.xdc}}
+set_property target_constrs_file {E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/constrs_1/new/Constraint.xdc} [current_fileset -constrset]
+save_constraints -force
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.runs/impl_1/LAB6.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.runs/impl_1/LAB6.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+refresh_design
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.runs/impl_1/LAB6.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+source Test_Bench.tcl
+close_sim
+launch_simulation
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close_project
+create_project project_jyy {E:/JI Files/VE270_Vivado/Lab6_Helina/project_jyy} -part xc7a35tcpg236-1
+file mkdir E:/JI Files/VE270_Vivado/Lab6_Helina/project_jyy/project_jyy.srcs/sources_1/new
+file mkdir E:/JI Files/VE270_Vivado/Lab6_Helina/project_jyy/project_jyy.srcs/sources_1/new
+file mkdir E:/JI Files/VE270_Vivado/Lab6_Helina/project_jyy/project_jyy.srcs/sources_1/new
+file mkdir E:/JI Files/VE270_Vivado/Lab6_Helina/project_jyy/project_jyy.srcs/sources_1/new
+file mkdir E:/JI Files/VE270_Vivado/Lab6_Helina/project_jyy/project_jyy.srcs/sources_1/new
+file mkdir E:/JI Files/VE270_Vivado/Lab6_Helina/project_jyy/project_jyy.srcs/sources_1/new
+file mkdir {E:/JI Files/VE270_Vivado/Lab6_Helina/project_jyy/project_jyy.srcs/sources_1/new}
+close [ open {E:/JI Files/VE270_Vivado/Lab6_Helina/project_jyy/project_jyy.srcs/sources_1/new/Whole.v} w ]
+add_files {{E:/JI Files/VE270_Vivado/Lab6_Helina/project_jyy/project_jyy.srcs/sources_1/new/Whole.v}}
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+open_run impl_1
+place_ports {cathode[6]} W7
+place_ports {cathode[5]} W6
+place_ports {cathode[4]} U8
+place_ports {cathode[3]} V8
+place_ports {cathode[2]} U5
+place_ports {cathode[1]} V5
+place_ports {cathode[0]} U7
+set_property IOSTANDARD LVCMOS33 [get_ports [list {anode[3]} {anode[2]} {anode[1]} {anode[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {cathode[6]} {cathode[5]} {cathode[4]} {cathode[3]} {cathode[2]} {cathode[1]} {cathode[0]}]]
+place_ports {col[3]} G3
+place_ports {col[2]} H1
+place_ports {col[1]} K2
+place_ports {col[0]} H2
+set_property IOSTANDARD LVCMOS33 [get_ports [list {col[3]} {col[2]} {col[1]} {col[0]}]]
+place_ports {row[3]} G2
+place_ports {row[2]} J2
+place_ports {row[1]} L2
+place_ports {row[0]} J1
+set_property IOSTANDARD LVCMOS33 [get_ports [list {row[3]} {row[2]} {row[1]} {row[0]}]]
+place_ports clock_in W5
+place_ports reset U17
+set_property IOSTANDARD LVCMOS33 [get_ports [list clock_in]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list reset]]
+place_ports {anode[3]} W4
+place_ports {anode[2]} V4
+place_ports {anode[1]} U4
+place_ports {anode[0]} U2
+file mkdir {E:/JI Files/VE270_Vivado/Lab6_Helina/project_jyy/project_jyy.srcs/constrs_1/new}
+close [ open {E:/JI Files/VE270_Vivado/Lab6_Helina/project_jyy/project_jyy.srcs/constrs_1/new/Constraint.xdc} w ]
+add_files -fileset constrs_1 {{E:/JI Files/VE270_Vivado/Lab6_Helina/project_jyy/project_jyy.srcs/constrs_1/new/Constraint.xdc}}
+set_property target_constrs_file {E:/JI Files/VE270_Vivado/Lab6_Helina/project_jyy/project_jyy.srcs/constrs_1/new/Constraint.xdc} [current_fileset -constrset]
+save_constraints -force
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {E:/JI Files/VE270_Vivado/Lab6_Helina/project_jyy/project_jyy.runs/impl_1/Whole.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/JI Files/VE270_Vivado/Lab6_Helina/project_jyy/project_jyy.runs/impl_1/Whole.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]

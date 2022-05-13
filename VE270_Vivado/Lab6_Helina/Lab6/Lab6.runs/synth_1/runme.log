@@ -1,0 +1,343 @@
+
+*** Running vivado
+    with args -log LAB6.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source LAB6.tcl
+
+
+****** Vivado v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source LAB6.tcl -notrace
+Command: synth_design -top LAB6 -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t-cpg236'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t-cpg236'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 21268 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 309.926 ; gain = 79.934
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'LAB6' [E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/LAB6.v:13]
+INFO: [Synth 8-638] synthesizing module 'Key_Scanner' [E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/Key_Scanner.v:3]
+	Parameter S0 bound to: 4'b0000 
+	Parameter S1 bound to: 4'b0001 
+	Parameter S2 bound to: 4'b0010 
+	Parameter S3 bound to: 4'b0011 
+	Parameter S4 bound to: 4'b0100 
+	Parameter S5 bound to: 4'b0101 
+	Parameter S6 bound to: 4'b0110 
+	Parameter S7 bound to: 4'b0111 
+	Parameter S8 bound to: 4'b1000 
+	Parameter S9 bound to: 4'b1001 
+INFO: [Synth 8-155] case statement is not full and has no default [E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/Key_Scanner.v:50]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/Key_Scanner.v:61]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/Key_Scanner.v:73]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/Key_Scanner.v:84]
+INFO: [Synth 8-256] done synthesizing module 'Key_Scanner' (1#1) [E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/Key_Scanner.v:3]
+INFO: [Synth 8-638] synthesizing module 'Reg' [E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/Register.v:3]
+INFO: [Synth 8-256] done synthesizing module 'Reg' (2#1) [E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/Register.v:3]
+INFO: [Synth 8-638] synthesizing module 'SSD' [E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/SSD.v:3]
+INFO: [Synth 8-226] default block is never used [E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/SSD.v:5]
+INFO: [Synth 8-256] done synthesizing module 'SSD' (3#1) [E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/SSD.v:3]
+WARNING: [Synth 8-3848] Net clock_out in module/entity LAB6 does not have driver. [E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/LAB6.v:18]
+INFO: [Synth 8-256] done synthesizing module 'LAB6' (4#1) [E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/LAB6.v:13]
+WARNING: [Synth 8-3331] design LAB6 has unconnected port clock
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 349.000 ; gain = 119.008
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin kd:clock to constant 0 [E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/LAB6.v:21]
+WARNING: [Synth 8-3295] tying undriven pin R:clock to constant 0 [E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/LAB6.v:22]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 349.000 ; gain = 119.008
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/constrs_1/new/Constraint.xdc]
+Finished Parsing XDC File [E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/constrs_1/new/Constraint.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/constrs_1/new/Constraint.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/LAB6_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/LAB6_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 630.172 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 630.172 ; gain = 400.180
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 630.172 ; gain = 400.180
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 630.172 ; gain = 400.180
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'curr_state_reg' in module 'Key_Scanner'
+WARNING: [Synth 8-6014] Unused sequential element curr_state_reg was removed.  [E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/Key_Scanner.v:26]
+WARNING: [Synth 8-6014] Unused sequential element next_state_reg was removed.  [E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/Key_Scanner.v:31]
+INFO: [Synth 8-5544] ROM "code" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element curr_state_reg was removed.  [E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/Key_Scanner.v:26]
+WARNING: [Synth 8-327] inferring latch for variable 'next_state_reg' [E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/Key_Scanner.v:31]
+WARNING: [Synth 8-6014] Unused sequential element curr_state_reg was removed.  [E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/Key_Scanner.v:26]
+WARNING: [Synth 8-327] inferring latch for variable 'next_state_reg' [E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/Key_Scanner.v:31]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      S0 |                       0000000001 |                             0000
+                      S1 |                       0000000010 |                             0001
+                      S2 |                       0000000100 |                             0010
+                      S3 |                       0000010000 |                             0011
+                      S4 |                       0001000000 |                             0100
+                      S8 |                       0100000000 |                             1000
+                      S7 |                       0010000000 |                             0111
+                      S6 |                       0000100000 |                             0110
+                      S5 |                       0000001000 |                             0101
+                      S9 |                       1000000000 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'curr_state_reg' using encoding 'one-hot' in module 'Key_Scanner'
+WARNING: [Synth 8-6014] Unused sequential element next_state_reg was removed.  [E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/Key_Scanner.v:31]
+WARNING: [Synth 8-6014] Unused sequential element curr_state_reg was removed.  [E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/Key_Scanner.v:26]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_next_state_reg' [E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/Key_Scanner.v:31]
+WARNING: [Synth 8-327] inferring latch for variable 'code_reg' [E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/Key_Scanner.v:51]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 630.172 ; gain = 400.180
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	  26 Input     10 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 3     
+	  10 Input      4 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Key_Scanner 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	  26 Input     10 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 3     
+	  10 Input      4 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 4     
+Module Reg 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element R/Q_reg was removed.  [E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.srcs/sources_1/new/Register.v:10]
+WARNING: [Synth 8-3331] design LAB6 has unconnected port clock
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 630.172 ; gain = 400.180
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 630.172 ; gain = 400.180
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 630.172 ; gain = 400.180
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (kd/FSM_onehot_next_state_reg[8]) is unused and will be removed from module LAB6.
+WARNING: [Synth 8-3332] Sequential element (kd/FSM_onehot_next_state_reg[7]) is unused and will be removed from module LAB6.
+WARNING: [Synth 8-3332] Sequential element (kd/FSM_onehot_next_state_reg[5]) is unused and will be removed from module LAB6.
+WARNING: [Synth 8-3332] Sequential element (kd/FSM_onehot_next_state_reg[3]) is unused and will be removed from module LAB6.
+WARNING: [Synth 8-3332] Sequential element (kd/FSM_onehot_next_state_reg[1]) is unused and will be removed from module LAB6.
+WARNING: [Synth 8-3332] Sequential element (kd/OR_ROW_reg) is unused and will be removed from module LAB6.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 630.172 ; gain = 400.180
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 630.172 ; gain = 400.180
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 630.172 ; gain = 400.180
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 630.172 ; gain = 400.180
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 630.172 ; gain = 400.180
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 630.172 ; gain = 400.180
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 630.172 ; gain = 400.180
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT2 |     2|
+|2     |LUT3 |     1|
+|3     |LUT4 |    15|
+|4     |LUT6 |     5|
+|5     |FDCE |     9|
+|6     |FDPE |     1|
+|7     |LD   |     9|
+|8     |IBUF |     5|
+|9     |OBUF |    11|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+------------+------+
+|      |Instance |Module      |Cells |
++------+---------+------------+------+
+|1     |top      |            |    58|
+|2     |  kd     |Key_Scanner |    35|
+|3     |  sd     |SSD         |     7|
++------+---------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 630.172 ; gain = 400.180
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 18 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 630.172 ; gain = 119.008
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 630.172 ; gain = 400.180
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 14 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 9 instances were transformed.
+  LD => LDCE: 9 instances
+
+30 Infos, 22 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 631.086 ; gain = 407.855
+INFO: [Common 17-1381] The checkpoint 'E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.runs/synth_1/LAB6.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 631.086 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 18 12:56:35 2019...

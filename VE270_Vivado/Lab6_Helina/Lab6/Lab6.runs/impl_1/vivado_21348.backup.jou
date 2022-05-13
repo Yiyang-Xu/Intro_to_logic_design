@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Mon Nov 18 12:56:56 2019
+# Process ID: 21348
+# Current directory: E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.runs/impl_1
+# Command line: vivado.exe -log LAB6.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source LAB6.tcl -notrace
+# Log file: E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.runs/impl_1/LAB6.vdi
+# Journal file: E:/JI Files/VE270_Vivado/Lab6_Helina/Lab6/Lab6.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source LAB6.tcl -notrace
